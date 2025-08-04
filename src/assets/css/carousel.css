@@ -1,0 +1,21 @@
+/* Custom carousel animations */
+.embla-slide-enter-active,
+.embla-slide-leave-active {
+  transition: all 0.3s ease-in-out;
+}
+
+.embla-slide-enter-from,
+.embla-slide-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}
+
+/* Custom scrollbar for carousel container */
+.embla__container::-webkit-scrollbar {
+  display: none;
+}
+
+.embla__container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

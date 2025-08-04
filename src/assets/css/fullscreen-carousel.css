@@ -1,0 +1,63 @@
+/* Fullscreen Carousel Overrides - Chrome Compatible */
+
+/* Force fullscreen styles with high specificity */
+.fullscreen-carousel.fullscreen-carousel {
+  max-width: none !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  z-index: 50 !important;
+}
+
+/* Override any Embla default styles */
+.fullscreen-carousel .embla,
+.fullscreen-carousel .embla__viewport,
+.fullscreen-carousel > div {
+  max-width: none !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Ensure container has no margins or padding */
+.fullscreen-carousel .embla__container,
+.fullscreen-carousel .flex {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Force each slide to be full width */
+.fullscreen-carousel .embla__slide,
+.fullscreen-carousel .fullscreen-slide,
+.fullscreen-carousel [class*="w-full"] {
+  flex: 0 0 100% !important;
+  width: 100% !important;
+  min-width: 100% !important;
+  max-width: 100% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* Reset CSS custom properties for fullscreen */
+.fullscreen-carousel {
+  --slide-size: 100% !important;
+  --slide-spacing: 0px !important;
+  --slide-height: 100vh !important;
+}
+
+/* Additional Chrome-specific fixes */
+.fullscreen-carousel * {
+  box-sizing: border-box !important;
+}
+
+.fullscreen-carousel .embla__slide > div {
+  width: 100% !important;
+  height: 100% !important;
+}
