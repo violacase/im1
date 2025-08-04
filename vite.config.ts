@@ -1,6 +1,9 @@
 import { fileURLToPath, URL } from 'node:url'
-import AutoImport from 'unplugin-auto-import/vite'
+
 import { defineConfig } from 'vite'
+
+import VueRouter from 'unplugin-vue-router/vite'
+import AutoImport from 'unplugin-auto-import/vite'
 import vue from '@vitejs/plugin-vue'
 import vueDevTools from 'vite-plugin-vue-devtools'
 import tailwindcss from '@tailwindcss/vite'
@@ -9,10 +12,17 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [
     vue(),
+    VueRouter({
+      routesFolder: 'src/pages',
+    }),
     AutoImport({
-      imports: ['vue', 'vue-router'],
-      dirs: ['src/composables', 'src/utils'],
-      dts: true, // Genereert TypeScript definities
+      imports: [
+        'vue',
+        {
+          'vue-router/auto': ['useRouter', 'useRoute'],
+        },
+      ],
+      dirs: ['src/composables'],
     }),
     vueDevTools(),
     tailwindcss(),
