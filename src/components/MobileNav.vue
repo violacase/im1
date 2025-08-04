@@ -1,20 +1,21 @@
 <script setup lang="ts">
+import { useRoute, useRouter } from 'vue-router'
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
   SheetContent,
   SheetTrigger,
   SheetClose,
-} from "@/components/ui/Sheet";
+} from "@/components/ui/sheet";
 import { Separator } from "@/components/ui/separator";
 import { Badge } from "@/components/ui/badge";
 import {
   Menu,
-  ChevronRight
-  ,
+  ChevronRight,
 } from "lucide-vue-next";
 
-import AppLogo from "./AppLogo.vue";
+const route = useRoute()
+const router = useRouter()
 
 // Props and emits for proper v-model support
 const props = defineProps<{
@@ -30,19 +31,19 @@ const emit = defineEmits<{
 interface NavItem {
   label: string;
   href: string;
-  icon?: any;
+  icon?: string | object;
   badge?: string | null;
 }
 
 const handleNavigation = (href: string) => {
-  // Use Nuxt's navigation
-  navigateTo(href);
+  // Use Vue Router's navigation
+  router.push(href);
   emit("update:open", false);
 };
 
-const closeSheet = () => {
-  emit("update:open", false);
-};
+// const closeSheet = () => {
+//   emit("update:open", false);
+// };
 </script>
 
 <template>
@@ -55,7 +56,6 @@ const closeSheet = () => {
         </Button>
       </div>
     </SheetTrigger>
-    <!-- <AppLogo size="small" /> -->
 
     <SheetContent side="right" class="w-80 p-0">
       <div class="p-6 pb-4 flex items-center justify-between">
@@ -65,7 +65,6 @@ const closeSheet = () => {
             X
           </Button>
         </SheetClose>
-
       </div>
 
       <Separator />
@@ -74,7 +73,7 @@ const closeSheet = () => {
         <div class="space-y-2">
           <button v-for="item in props.items" :key="item.href" @click="handleNavigation(item.href)" :class="[
             'w-full flex items-center justify-between p-3 rounded-lg transition-colors group',
-            $route.path === item.href
+            route.path === item.href
               ? 'bg-muted text-foreground'
               : 'hover:bg-muted active:bg-muted',
           ]">
@@ -98,7 +97,7 @@ const closeSheet = () => {
 
       <!-- Footer section with theme switcher -->
       <div class="p-6 pt-4">
-        <ThemeSwitcher class="ml-2 sm:ml-4 flex-shrink-0" />
+        <!-- <ThemeSwitcher class="ml-2 sm:ml-4 flex-shrink-0" /> -->
       </div>
     </SheetContent>
   </Sheet>
