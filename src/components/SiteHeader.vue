@@ -33,8 +33,8 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import { Home, Settings, Camera, Projector, Info, Flower } from "lucide-vue-next";
-import DesktopNav from "@/components/DesktopNav.vue";
-import MobileNav from "@/components/MobileNav.vue";
+import DesktopNav from "./DesktopNav.vue";
+import MobileNav from "./MobileNav.vue";
 //import AppLogo from "./AppLogo.vue"; // Add this import
 // import MobileNavButton from "./MobileNavButton.vue";
 

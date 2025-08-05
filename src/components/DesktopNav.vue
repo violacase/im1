@@ -19,10 +19,15 @@
         class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-primary rounded-full" />
     </RouterLink>
   </nav>
+  <!-- Footer section with theme switcher -->
+  <div class="p-6 pt-4">
+    <ThemeSwitcher class="ml-2 sm:ml-4 flex-shrink-0" />
+  </div>
 </template>
 
 <script setup lang="ts">
 import { useRoute } from 'vue-router'
+import ThemeSwitcher from "./ThemeSwitcher.vue";
 import { Badge } from "@/components/ui/badge";
 
 const route = useRoute()

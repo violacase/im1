@@ -13,6 +13,7 @@ import {
   Menu,
   ChevronRight,
 } from "lucide-vue-next";
+import ThemeSwitcher from "./ThemeSwitcher.vue";
 
 const route = useRoute()
 const router = useRouter()
@@ -97,7 +98,7 @@ const handleNavigation = (href: string) => {
 
       <!-- Footer section with theme switcher -->
       <div class="p-6 pt-4">
-        <!-- <ThemeSwitcher class="ml-2 sm:ml-4 flex-shrink-0" /> -->
+        <ThemeSwitcher class="ml-2 sm:ml-4 flex-shrink-0" />
       </div>
     </SheetContent>
   </Sheet>
