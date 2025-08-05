@@ -21,8 +21,6 @@
   }
 }
 
-@custom-variant dark (&:is(.dark *));
-
 /* Vue Router active link classes - vervang nuxt-link-active */
 .router-link-active,
 .router-link-exact-active {

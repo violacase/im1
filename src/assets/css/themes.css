@@ -111,23 +111,17 @@
 .darkblue {
   /* Base Palette - Dark Blueish */
   --background: oklch(0.15 0.04 250); /* Very dark, slightly desaturated blue */
-  --foreground: oklch(
-    0.95 0.01 250
-  ); /* Very light, almost white, slight blue tint for text */
+  --foreground: oklch(0.95 0.01 250); /* Very light, almost white, slight blue tint for text */
 
   /* Cards, Popovers - Surfaces slightly lighter than background */
   --card: oklch(0.2 0.05 250); /* Dark blue, a bit lighter than background */
   --card-foreground: oklch(0.93 0.01 250); /* Light text for cards */
 
-  --popover: oklch(
-    0.22 0.055 250
-  ); /* Slightly lighter than card for pop-up effect */
+  --popover: oklch(0.22 0.055 250); /* Slightly lighter than card for pop-up effect */
   --popover-foreground: oklch(0.93 0.01 250); /* Light text for popovers */
 
   /* Primary Actions - A more vibrant blue */
-  --primary: oklch(
-    0.6 0.18 260
-  ); /* Brighter, more saturated blue for main actions */
+  --primary: oklch(0.6 0.18 260); /* Brighter, more saturated blue for main actions */
   --primary-foreground: oklch(
     0.1 0.02 260
   ); /* Very dark blue/black text for contrast on primary buttons */
@@ -135,49 +129,31 @@
 
   /* Secondary Actions - A less prominent, lighter blue or gray-blue */
   --secondary: oklch(0.35 0.06 255); /* Muted blue-gray */
-  --secondary-foreground: oklch(
-    0.9 0.015 255
-  ); /* Light text for secondary elements */
+  --secondary-foreground: oklch(0.9 0.015 255); /* Light text for secondary elements */
 
   /* Muted Elements - For less emphasis */
-  --muted: oklch(
-    0.28 0.03 250
-  ); /* Darker, more desaturated blue-gray for backgrounds */
-  --muted-foreground: oklch(
-    0.65 0.02 250
-  ); /* Dimmed text, still light but less prominent */
+  --muted: oklch(0.28 0.03 250); /* Darker, more desaturated blue-gray for backgrounds */
+  --muted-foreground: oklch(0.65 0.02 250); /* Dimmed text, still light but less prominent */
 
   /* Accent - Can be similar to secondary or a different subtle hue */
-  --accent: oklch(
-    0.45 0.12 230
-  ); /* A slightly different shade of blue, or a contrasting accent */
-  --accent-foreground: oklch(
-    0.95 0.01 230
-  ); /* Light text for accent elements */
+  --accent: oklch(0.45 0.12 230); /* A slightly different shade of blue, or a contrasting accent */
+  --accent-foreground: oklch(0.95 0.01 230); /* Light text for accent elements */
 
   /* Destructive Actions - A clear, but not overly bright, red */
-  --destructive: oklch(
-    0.55 0.23 25
-  ); /* A noticeable red, adjusted for dark theme */
+  --destructive: oklch(0.55 0.23 25); /* A noticeable red, adjusted for dark theme */
   --destructive-foreground: oklch(
     0.98 0.02 25
   ); /* Very light (off-white/pinkish) text for destructive buttons */
 
   /* Borders and Inputs */
-  --border: oklch(
-    0.3 0.04 250
-  ); /* Subtle borders, slightly lighter than card/surfaces */
-  --input: oklch(
-    0.25 0.035 250
-  ); /* Input field background, similar to card but can be distinct */
+  --border: oklch(0.3 0.04 250); /* Subtle borders, slightly lighter than card/surfaces */
+  --input: oklch(0.25 0.035 250); /* Input field background, similar to card but can be distinct */
   --ring: oklch(0.65 0.15 265); /* Focus ring - a brighter, noticeable blue */
 
   /* Chart Colors - Need to be visible and distinct on a dark background */
   --chart-1: oklch(0.7 0.2 45); /* Bright Orange/Yellow */
   --chart-2: oklch(0.75 0.15 180); /* Bright Cyan/Teal */
-  --chart-3: oklch(
-    0.6 0.18 280
-  ); /* Bright Purple/Magenta (distinct from theme blues) */
+  --chart-3: oklch(0.6 0.18 280); /* Bright Purple/Magenta (distinct from theme blues) */
   --chart-4: oklch(0.8 0.18 100); /* Bright Green/Lime */
   --chart-5: oklch(0.7 0.16 330); /* Bright Pink/Rose */
 
@@ -185,15 +161,11 @@
   --radius: 0.625rem;
 
   /* Sidebar - Can be a slightly different shade of dark blue or dark gray */
-  --sidebar: oklch(
-    0.12 0.03 255
-  ); /* Even darker blue for sidebar, or distinct dark gray */
+  --sidebar: oklch(0.12 0.03 255); /* Even darker blue for sidebar, or distinct dark gray */
   --sidebar-foreground: oklch(0.9 0.01 255);
 
   --sidebar-primary: oklch(0.58 0.17 265); /* Primary actions within sidebar */
-  --sidebar-primary-foreground: oklch(
-    0.1 0.02 265
-  ); /* Dark text on sidebar primary */
+  --sidebar-primary-foreground: oklch(0.1 0.02 265); /* Dark text on sidebar primary */
   /* Alt: --sidebar-primary-foreground: oklch(0.97 0.01 265); */
 
   --sidebar-accent: oklch(0.4 0.1 235); /* Accent color within sidebar */
@@ -204,74 +176,48 @@
 }
 .mediumgreen {
   /* Base Palette - Mediate Green */
-  --background: oklch(
-    0.15 0.04 140
-  ); /* Very dark, slightly desaturated green */
-  --foreground: oklch(
-    0.95 0.01 140
-  ); /* Very light, almost white, slight green tint for text */
+  --background: oklch(0.15 0.04 140); /* Very dark, slightly desaturated green */
+  --foreground: oklch(0.95 0.01 140); /* Very light, almost white, slight green tint for text */
 
   /* Cards, Popovers - Surfaces slightly lighter than background */
   --card: oklch(0.2 0.05 140); /* Dark green, a bit lighter than background */
   --card-foreground: oklch(0.93 0.01 140); /* Light text for cards */
-  --popover: oklch(
-    0.22 0.055 140
-  ); /* Slightly lighter than card for pop-up effect */
+  --popover: oklch(0.22 0.055 140); /* Slightly lighter than card for pop-up effect */
   --popover-foreground: oklch(0.93 0.01 140); /* Light text for popovers */
 
   /* Primary Actions - A more vibrant green */
-  --primary: oklch(
-    0.6 0.18 145
-  ); /* Brighter, more saturated green for main actions */
+  --primary: oklch(0.6 0.18 145); /* Brighter, more saturated green for main actions */
   --primary-foreground: oklch(
     0.1 0.02 145
   ); /* Very dark green/black text for contrast on primary buttons */
 
   /* Secondary Actions - A less prominent, lighter green */
   --secondary: oklch(0.35 0.06 135); /* Muted green-gray */
-  --secondary-foreground: oklch(
-    0.9 0.015 135
-  ); /* Light text for secondary elements */
+  --secondary-foreground: oklch(0.9 0.015 135); /* Light text for secondary elements */
 
   /* Muted Elements - For less emphasis */
-  --muted: oklch(
-    0.28 0.03 140
-  ); /* Darker, more desaturated green-gray for backgrounds */
-  --muted-foreground: oklch(
-    0.65 0.02 140
-  ); /* Dimmed text, still light but less prominent */
+  --muted: oklch(0.28 0.03 140); /* Darker, more desaturated green-gray for backgrounds */
+  --muted-foreground: oklch(0.65 0.02 140); /* Dimmed text, still light but less prominent */
 
   /* Accent - A contrasting, slightly yellow-green */
-  --accent: oklch(
-    0.45 0.12 110
-  ); /* A slightly different shade of green, or a contrasting accent */
-  --accent-foreground: oklch(
-    0.95 0.01 110
-  ); /* Light text for accent elements */
+  --accent: oklch(0.45 0.12 110); /* A slightly different shade of green, or a contrasting accent */
+  --accent-foreground: oklch(0.95 0.01 110); /* Light text for accent elements */
 
   /* Destructive Actions - A clear, but not overly bright, red */
-  --destructive: oklch(
-    0.55 0.23 25
-  ); /* A noticeable red, adjusted for dark theme */
+  --destructive: oklch(0.55 0.23 25); /* A noticeable red, adjusted for dark theme */
   --destructive-foreground: oklch(
     0.98 0.02 25
   ); /* Very light (off-white/pinkish) text for destructive buttons */
 
   /* Borders and Inputs */
-  --border: oklch(
-    0.3 0.04 140
-  ); /* Subtle borders, slightly lighter than card/surfaces */
-  --input: oklch(
-    0.25 0.035 140
-  ); /* Input field background, similar to card but can be distinct */
+  --border: oklch(0.3 0.04 140); /* Subtle borders, slightly lighter than card/surfaces */
+  --input: oklch(0.25 0.035 140); /* Input field background, similar to card but can be distinct */
   --ring: oklch(0.65 0.15 145); /* Focus ring - a brighter, noticeable green */
 
   /* Chart Colors - Need to be visible and distinct on a dark background */
   --chart-1: oklch(0.7 0.2 45); /* Bright Orange/Yellow */
   --chart-2: oklch(0.75 0.15 180); /* Bright Cyan/Teal */
-  --chart-3: oklch(
-    0.6 0.18 280
-  ); /* Bright Purple/Magenta (distinct from theme greens) */
+  --chart-3: oklch(0.6 0.18 280); /* Bright Purple/Magenta (distinct from theme greens) */
   --chart-4: oklch(0.8 0.18 140); /* Bright Green/Lime */
   --chart-5: oklch(0.7 0.16 330); /* Bright Pink/Rose */
 
@@ -279,14 +225,10 @@
   --radius: 0.625rem;
 
   /* Sidebar - Can be a slightly different shade of dark green or dark gray */
-  --sidebar: oklch(
-    0.12 0.03 135
-  ); /* Even darker green for sidebar, or distinct dark gray */
+  --sidebar: oklch(0.12 0.03 135); /* Even darker green for sidebar, or distinct dark gray */
   --sidebar-foreground: oklch(0.9 0.01 135);
   --sidebar-primary: oklch(0.58 0.17 145); /* Primary actions within sidebar */
-  --sidebar-primary-foreground: oklch(
-    0.1 0.02 145
-  ); /* Dark text on sidebar primary */
+  --sidebar-primary-foreground: oklch(0.1 0.02 145); /* Dark text on sidebar primary */
   --sidebar-accent: oklch(0.4 0.1 110); /* Accent color within sidebar */
   --sidebar-accent-foreground: oklch(0.92 0.01 110);
   --sidebar-border: oklch(0.25 0.03 135);
@@ -296,69 +238,47 @@
 .redish {
   /* Base Palette - Redish */
   --background: oklch(0.15 0.04 25); /* Very dark, slightly desaturated red */
-  --foreground: oklch(
-    0.95 0.01 25
-  ); /* Very light, almost white, slight red tint for text */
+  --foreground: oklch(0.95 0.01 25); /* Very light, almost white, slight red tint for text */
 
   /* Cards, Popovers - Surfaces slightly lighter than background */
   --card: oklch(0.2 0.05 25); /* Dark red, a bit lighter than background */
   --card-foreground: oklch(0.93 0.01 25); /* Light text for cards */
-  --popover: oklch(
-    0.22 0.055 25
-  ); /* Slightly lighter than card for pop-up effect */
+  --popover: oklch(0.22 0.055 25); /* Slightly lighter than card for pop-up effect */
   --popover-foreground: oklch(0.93 0.01 25); /* Light text for popovers */
 
   /* Primary Actions - A more vibrant red */
-  --primary: oklch(
-    0.6 0.18 25
-  ); /* Brighter, more saturated red for main actions */
+  --primary: oklch(0.6 0.18 25); /* Brighter, more saturated red for main actions */
   --primary-foreground: oklch(
     0.1 0.02 25
   ); /* Very dark red/black text for contrast on primary buttons */
 
   /* Secondary Actions - A less prominent, lighter red */
   --secondary: oklch(0.35 0.06 27); /* Muted red-gray */
-  --secondary-foreground: oklch(
-    0.9 0.015 27
-  ); /* Light text for secondary elements */
+  --secondary-foreground: oklch(0.9 0.015 27); /* Light text for secondary elements */
 
   /* Muted Elements - For less emphasis */
-  --muted: oklch(
-    0.28 0.03 25
-  ); /* Darker, more desaturated red-gray for backgrounds */
-  --muted-foreground: oklch(
-    0.65 0.02 25
-  ); /* Dimmed text, still light but less prominent */
+  --muted: oklch(0.28 0.03 25); /* Darker, more desaturated red-gray for backgrounds */
+  --muted-foreground: oklch(0.65 0.02 25); /* Dimmed text, still light but less prominent */
 
   /* Accent - A contrasting, slightly orange-red */
-  --accent: oklch(
-    0.45 0.12 40
-  ); /* A slightly different shade of red, or a contrasting accent */
+  --accent: oklch(0.45 0.12 40); /* A slightly different shade of red, or a contrasting accent */
   --accent-foreground: oklch(0.95 0.01 40); /* Light text for accent elements */
 
   /* Destructive Actions - A clear, but not overly bright, red */
-  --destructive: oklch(
-    0.55 0.23 25
-  ); /* A noticeable red, adjusted for dark theme */
+  --destructive: oklch(0.55 0.23 25); /* A noticeable red, adjusted for dark theme */
   --destructive-foreground: oklch(
     0.98 0.02 25
   ); /* Very light (off-white/pinkish) text for destructive buttons */
 
   /* Borders and Inputs */
-  --border: oklch(
-    0.3 0.04 25
-  ); /* Subtle borders, slightly lighter than card/surfaces */
-  --input: oklch(
-    0.25 0.035 25
-  ); /* Input field background, similar to card but can be distinct */
+  --border: oklch(0.3 0.04 25); /* Subtle borders, slightly lighter than card/surfaces */
+  --input: oklch(0.25 0.035 25); /* Input field background, similar to card but can be distinct */
   --ring: oklch(0.65 0.15 25); /* Focus ring - a brighter, noticeable red */
 
   /* Chart Colors - Need to be visible and distinct on a dark background */
   --chart-1: oklch(0.7 0.2 45); /* Bright Orange/Yellow */
   --chart-2: oklch(0.75 0.15 180); /* Bright Cyan/Teal */
-  --chart-3: oklch(
-    0.6 0.18 280
-  ); /* Bright Purple/Magenta (distinct from theme reds) */
+  --chart-3: oklch(0.6 0.18 280); /* Bright Purple/Magenta (distinct from theme reds) */
   --chart-4: oklch(0.8 0.18 100); /* Bright Green/Lime */
   --chart-5: oklch(0.7 0.16 330); /* Bright Pink/Rose */
 
@@ -366,14 +286,10 @@
   --radius: 0.625rem;
 
   /* Sidebar - Can be a slightly different shade of dark red or dark gray */
-  --sidebar: oklch(
-    0.12 0.03 27
-  ); /* Even darker red for sidebar, or distinct dark gray */
+  --sidebar: oklch(0.12 0.03 27); /* Even darker red for sidebar, or distinct dark gray */
   --sidebar-foreground: oklch(0.9 0.01 27);
   --sidebar-primary: oklch(0.58 0.17 25); /* Primary actions within sidebar */
-  --sidebar-primary-foreground: oklch(
-    0.1 0.02 25
-  ); /* Dark text on sidebar primary */
+  --sidebar-primary-foreground: oklch(0.1 0.02 25); /* Dark text on sidebar primary */
   --sidebar-accent: oklch(0.4 0.1 40); /* Accent color within sidebar */
   --sidebar-accent-foreground: oklch(0.92 0.01 40);
   --sidebar-border: oklch(0.25 0.03 27);
@@ -382,20 +298,14 @@
 
 .brown {
   /* Base Palette - Earthy Brownish, Medium-Dark */
-  --background: oklch(
-    0.22 0.03 45
-  ); /* Medium-dark, slightly warm brown (like dark soil) */
+  --background: oklch(0.22 0.03 45); /* Medium-dark, slightly warm brown (like dark soil) */
   --foreground: oklch(0.95 0.015 55); /* Very light, warm off-white for text */
 
   /* Cards, Popovers - Surfaces slightly lighter than background */
-  --card: oklch(
-    0.27 0.04 48
-  ); /* A slightly lighter, warmer brown (like dry earth or light wood) */
+  --card: oklch(0.27 0.04 48); /* A slightly lighter, warmer brown (like dry earth or light wood) */
   --card-foreground: oklch(0.93 0.015 55); /* Light text for cards */
 
-  --popover: oklch(
-    0.3 0.045 50
-  ); /* A step lighter for pop-up effect, warm beige-brown */
+  --popover: oklch(0.3 0.045 50); /* A step lighter for pop-up effect, warm beige-brown */
   --popover-foreground: oklch(0.93 0.015 55); /* Light text for popovers */
 
   /* Primary Actions - A richer, warmer brown or a contrasting natural tone */
@@ -409,38 +319,24 @@
 
   /* Secondary Actions - A more muted, lighter brown or beige */
   --secondary: oklch(0.4 0.05 55); /* Muted beige-brown (like sandstone) */
-  --secondary-foreground: oklch(
-    0.9 0.01 55
-  ); /* Light text for secondary elements */
+  --secondary-foreground: oklch(0.9 0.01 55); /* Light text for secondary elements */
 
   /* Muted Elements - For less emphasis */
-  --muted: oklch(
-    0.32 0.025 50
-  ); /* Darker, more desaturated brown-gray for muted backgrounds */
-  --muted-foreground: oklch(
-    0.65 0.02 60
-  ); /* Dimmed text, still light but less prominent */
+  --muted: oklch(0.32 0.025 50); /* Darker, more desaturated brown-gray for muted backgrounds */
+  --muted-foreground: oklch(0.65 0.02 60); /* Dimmed text, still light but less prominent */
 
   /* Accent - Can be a different shade of brown, or a subtle natural contrast like a muted olive/moss */
-  --accent: oklch(
-    0.5 0.08 75
-  ); /* A muted olive/khaki or a distinct light warm brown */
+  --accent: oklch(0.5 0.08 75); /* A muted olive/khaki or a distinct light warm brown */
   --accent-foreground: oklch(0.95 0.01 75); /* Light text for accent elements */
 
   /* Destructive Actions - A clear, but perhaps slightly earthier/rust red */
-  --destructive: oklch(
-    0.5 0.2 30
-  ); /* A noticeable rust/brick red, adjusted for dark theme */
-  --destructive-foreground: oklch(
-    0.98 0.02 30
-  ); /* Very light (off-white/pinkish) text */
+  --destructive: oklch(0.5 0.2 30); /* A noticeable rust/brick red, adjusted for dark theme */
+  --destructive-foreground: oklch(0.98 0.02 30); /* Very light (off-white/pinkish) text */
 
   /* Borders and Inputs */
   --border: oklch(0.35 0.03 50); /* Subtle borders, slightly lighter brown */
   --input: oklch(0.3 0.035 48); /* Input field background, similar to card */
-  --ring: oklch(
-    0.65 0.1 45
-  ); /* Focus ring - a brighter, noticeable warm brown */
+  --ring: oklch(0.65 0.1 45); /* Focus ring - a brighter, noticeable warm brown */
 
   /* Chart Colors - Need to be visible and distinct on a brownish background. Earthy & natural tones. */
   --chart-1: oklch(0.65 0.15 80); /* Muted Gold / Ochre */
@@ -453,20 +349,14 @@
   --radius: 0.625rem;
 
   /* Sidebar - Can be a slightly darker or richer brown */
-  --sidebar: oklch(
-    0.18 0.035 40
-  ); /* Darker, rich brown for sidebar (like dark bark) */
+  --sidebar: oklch(0.18 0.035 40); /* Darker, rich brown for sidebar (like dark bark) */
   --sidebar-foreground: oklch(0.9 0.015 50);
 
   --sidebar-primary: oklch(0.53 0.11 42); /* Primary actions within sidebar */
-  --sidebar-primary-foreground: oklch(
-    0.16 0.03 42
-  ); /* Dark text on sidebar primary */
+  --sidebar-primary-foreground: oklch(0.16 0.03 42); /* Dark text on sidebar primary */
   /* Alt: --sidebar-primary-foreground: oklch(0.97 0.01 42); */
 
-  --sidebar-accent: oklch(
-    0.48 0.07 70
-  ); /* Accent color within sidebar, muted olive/khaki */
+  --sidebar-accent: oklch(0.48 0.07 70); /* Accent color within sidebar, muted olive/khaki */
   --sidebar-accent-foreground: oklch(0.92 0.01 70);
 
   --sidebar-border: oklch(0.28 0.03 45);
