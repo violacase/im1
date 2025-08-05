@@ -7,8 +7,8 @@
       <!-- Mobile: medium logo gecentreerd -->
       <!-- <AppLogo size="medium" class="block sm:hidden mx-auto" /> -->
 
-      <AppLogo size="medium" class="desktop-logo" />
-      <AppLogo size="small" class="mobile-logo" />
+      <!-- <AppLogo size="medium" class="desktop-logo" />
+      <AppLogo size="small" class="mobile-logo" /> -->
 
       <DesktopNav :items="navItems" class="hidden sm:flex" />
       <MobileNav v-model:open="showMobileMenu" :items="navItems" class="sm:hidden" />
@@ -32,46 +32,52 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
-import { Home, Settings, Camera, Projector, Info, Flower } from "lucide-vue-next";
+import { Home, Settings, Info } from "lucide-vue-next";
+// import { Home, Settings, Camera, Projector, Info, Flower } from "lucide-vue-next";
+
 import DesktopNav from "./DesktopNav.vue";
 import MobileNav from "./MobileNav.vue";
-//import AppLogo from "./AppLogo.vue"; // Add this import
+// Make sure AppLogo.vue exists in ./src/components/
+// If it is in a different folder, update the path accordingly, e.g.:
+//import AppLogo from "@/components/AppLogo.vue"; // If using alias
+// or
+// import AppLogo from "../AppLogo.vue"; // If in parent folder
 // import MobileNavButton from "./MobileNavButton.vue";
 
 const navItems = [
   {
     label: "Home",
-    href: "/",
+    href: "/homePage",
     icon: Home,
     badge: null,
   },
   {
     label: "About",
-    href: "/about",
+    href: "/aboutPage",
     icon: Info,
     badge: null,
-  }, {
-    label: "Candles",
-    href: "/in-memoriam",
-    icon: Flower,
-    badge: null,
-  },
-  {
-    label: "Embla",
-    href: "/emblaDemo",
-    icon: Projector,
-    badge: "New!",
-  },
-  {
-    label: "Shadcn",
-    href: "/locations-carousel",
-    icon: Camera,
-    badge: "New!",
+    // }, {
+    //   label: "Candles",
+    //   href: "/in-memoriam",
+    //   icon: Flower,
+    //   badge: null,
+    // },
+    // {
+    //   label: "Embla",
+    //   href: "/emblaDemo",
+    //   icon: Projector,
+    //   badge: "New!",
+    // },
+    // {
+    //   label: "Shadcn",
+    //   href: "/locations-carousel",
+    //   icon: Camera,
+    //   badge: "New!",
   },
 
   {
     label: "Setup",
-    href: "/setup",
+    href: "/setupPage",
     icon: Settings,
     badge: null,
   },

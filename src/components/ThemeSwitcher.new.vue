@@ -56,16 +56,6 @@ const handleThemeChange = (themeValue: string) => {
 const isSelected = (themeValue: string) => {
   return currentTheme.value === themeValue;
 };
-
-const getThemeClasses = (themeValue: string) => {
-  const selected = isSelected(themeValue);
-  return [
-    'w-full flex items-center justify-between p-4 rounded-lg border transition-colors hover:bg-muted active:bg-muted',
-    selected
-      ? 'bg-accent border-primary font-semibold'
-      : 'border-border',
-  ];
-};
 </script>
 
 <template>
@@ -92,9 +82,16 @@ const getThemeClasses = (themeValue: string) => {
 
       <div class="p-6 pt-4 max-h-[60vh] overflow-y-auto">
         <div class="space-y-2">
-          <button v-for="theme in themes" :key="theme.value" @click="handleThemeChange(theme.value)"
-            :class="getThemeClasses(theme.value)" class="min-h-[56px] touch-manipulation">
-            <span class="font-medium text-left">{{ theme.label }}</span>
+          <button v-for="theme in themes" :key="theme.value" @click="handleThemeChange(theme.value)" :class="[
+            'w-full flex items-center justify-between p-4 rounded-lg border transition-colors',
+            'hover:bg-muted active:bg-muted focus:bg-muted focus:outline-none focus:ring-2 focus:ring-ring',
+            'min-h-[56px] touch-manipulation', // Mobile-friendly touch target
+            'text-left',
+            isSelected(theme.value)
+              ? 'bg-muted border-primary font-semibold ring-2 ring-primary/20'
+              : 'border-border hover:border-muted-foreground',
+          ]">
+            <span class="font-medium">{{ theme.label }}</span>
             <Check v-if="isSelected(theme.value)" class="w-5 h-5 text-primary shrink-0 ml-2" />
           </button>
         </div>
