@@ -1,5 +1,5 @@
 <template>
-  <MyHero />
+  <MyHero title="Welkom bij onze zorgverzekering" description="Ontdek de voordelen van onze uitgebreide dekking." />
   <section class="mb-12">
     <h2 class="text-2xl font-semibold mb-4">Basic Carousel</h2>
     <!-- <div class="max-w-4xl">
@@ -65,4 +65,7 @@
 </template>
 
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import MyHero from '@/components/MyHero.vue'
+// import EmblaCarousel from '@/components/EmblaCarousel.vue'
+</script>

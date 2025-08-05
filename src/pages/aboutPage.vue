@@ -1,4 +1,6 @@
 <template>
+  <MyHero title="Welkom bij onze zorgverzekering" description="Ontdek de voordelen van onze uitgebreide dekking." />
+
   <div class="bg-background text-foreground min-h-screen py-12">
     <div class="container mx-auto px-4 max-w-3xl">
       <h1 class="text-4xl lg:text-5xl font-bold text-center mb-8">About This Space</h1>
@@ -24,3 +26,7 @@
     </div>
   </div>
 </template>
+<script setup lang="ts">
+import MyHero from '@/components/MyHero.vue'
+// import EmblaCarousel from '@/components/EmblaCarousel.vue'
+</script>

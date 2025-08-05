@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { useLocalStorage } from '@vueuse/core'
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -9,47 +8,16 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { Check, Palette } from "lucide-vue-next";
-import { ref, watch } from "vue";
+import { ref } from "vue";
+import { useTheme } from "@/composables/useTheme";
+import type { ThemeValue } from "@/config/theme";
 
-// Custom theme management using localStorage
-const currentTheme = useLocalStorage('theme', 'system')
+// Use our custom theme management that properly handles 'system'
+const { currentTheme, setTheme, themes } = useTheme()
 const isOpen = ref(false);
 
-// Apply theme to document
-const applyTheme = (theme: string) => {
-  const html = document.documentElement
-
-  // Remove all theme classes
-  html.classList.remove('light', 'dark', 'darkblue', 'mediumgreen', 'brown', 'redish', 'darkorange', 'lightorange')
-
-  if (theme === 'system') {
-    // Use system preference
-    const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
-    html.classList.add(systemTheme)
-  } else {
-    html.classList.add(theme)
-  }
-}
-
-// Watch for theme changes
-watch(currentTheme, (newTheme) => {
-  applyTheme(newTheme)
-}, { immediate: true })
-
-const themes = [
-  { label: "Systeem", value: "system" },
-  { label: "Licht", value: "light" },
-  { label: "Donker", value: "dark" },
-  { label: "Blauw", value: "darkblue" },
-  { label: "Groen", value: "mediumgreen" },
-  { label: "Bruin", value: "brown" },
-  { label: "Roodachtig", value: "redish" },
-  { label: "Donker Oranje", value: "darkorange" },
-  { label: "Licht Oranje", value: "lightorange" },
-] as const;
-
 const handleThemeChange = (themeValue: string) => {
-  currentTheme.value = themeValue;
+  setTheme(themeValue as ThemeValue);
   isOpen.value = false;
 };
 
