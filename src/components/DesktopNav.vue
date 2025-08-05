@@ -18,26 +18,19 @@
       <div v-if="route.path === item.href"
         class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-primary rounded-full" />
     </RouterLink>
-  </nav>
-  <!-- Footer section with theme switcher -->
-  <div class="p-6 pt-4">
+
+    <!-- Theme switcher as part of the nav bar -->
     <ThemeSwitcher class="ml-2 sm:ml-4 flex-shrink-0" />
-  </div>
+  </nav>
 </template>
 
 <script setup lang="ts">
 import { useRoute } from 'vue-router'
 import ThemeSwitcher from "./ThemeSwitcher.vue";
 import { Badge } from "@/components/ui/badge";
+import type { NavItem } from "@/types/navigation";
 
 const route = useRoute()
-
-interface NavItem {
-  label: string;
-  href: string;
-  icon?: string | object;
-  badge?: string | null;
-}
 
 defineProps<{
   items: NavItem[];

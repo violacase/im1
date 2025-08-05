@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { Button } from "@/components/ui/button";
 import {
@@ -12,11 +13,14 @@ import { Badge } from "@/components/ui/badge";
 import {
   Menu,
   ChevronRight,
+  X,
 } from "lucide-vue-next";
-import ThemeSwitcher from "./ThemeSwitcher.vue";
+import ThemeSwitcher from "@/components/ThemeSwitcher.vue";
+import type { NavItem } from "@/types/navigation";
 
 const route = useRoute()
 const router = useRouter()
+const isNavigating = ref(false)
 
 // Props and emits for proper v-model support
 const props = defineProps<{
@@ -28,23 +32,22 @@ const emit = defineEmits<{
   "update:open": [value: boolean];
 }>();
 
-// Props and emits for proper v-model support
-interface NavItem {
-  label: string;
-  href: string;
-  icon?: string | object;
-  badge?: string | null;
-}
+const handleNavigation = async (href: string) => {
+  if (isNavigating.value) return; // Prevent double-clicks
 
-const handleNavigation = (href: string) => {
-  // Use Vue Router's navigation
-  router.push(href);
-  emit("update:open", false);
+  isNavigating.value = true;
+  try {
+    // Use Vue Router's navigation
+    await router.push(href);
+    emit("update:open", false);
+  } catch (error) {
+    console.error('Navigation error:', error);
+    // Still close the menu even if navigation fails
+    emit("update:open", false);
+  } finally {
+    isNavigating.value = false;
+  }
 };
-
-// const closeSheet = () => {
-//   emit("update:open", false);
-// };
 </script>
 
 <template>
@@ -60,10 +63,11 @@ const handleNavigation = (href: string) => {
 
     <SheetContent side="right" class="w-80 p-0">
       <div class="p-6 pb-4 flex items-center justify-between">
-        <AppLogo size="small" />
+        <!-- <AppLogo size="small" /> -->
+        <span class="font-semibold text-lg">Menu</span>
         <SheetClose>
-          <Button variant="ghost" size="icon" class="rounded-full">
-            X
+          <Button variant="ghost" size="icon" class="rounded-full" aria-label="Menu sluiten">
+            <X class="h-4 w-4" />
           </Button>
         </SheetClose>
       </div>
@@ -72,12 +76,14 @@ const handleNavigation = (href: string) => {
 
       <nav class="flex-1 px-6 py-4">
         <div class="space-y-2">
-          <button v-for="item in props.items" :key="item.href" @click="handleNavigation(item.href)" :class="[
-            'w-full flex items-center justify-between p-3 rounded-lg transition-colors group',
-            route.path === item.href
-              ? 'bg-muted text-foreground'
-              : 'hover:bg-muted active:bg-muted',
-          ]">
+          <button v-for="item in props.items" :key="item.href" @click="handleNavigation(item.href)"
+            :disabled="isNavigating" :class="[
+              'w-full flex items-center justify-between p-3 rounded-lg transition-colors group',
+              'disabled:opacity-50 disabled:cursor-not-allowed',
+              route.path === item.href
+                ? 'bg-muted text-foreground'
+                : 'hover:bg-muted active:bg-muted',
+            ]">
             <div class="flex items-center space-x-3">
               <component :is="item.icon"
                 class="h-5 w-5 text-muted-foreground group-hover:text-foreground transition-colors" />
