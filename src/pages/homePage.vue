@@ -2,9 +2,9 @@
   <MyHero title="Welkom bij onze zorgverzekering" description="Ontdek de voordelen van onze uitgebreide dekking." />
   <section class="mb-12">
     <h2 class="text-2xl font-semibold mb-4">Basic Carousel</h2>
-    <!-- <div class="max-w-4xl">
+    <div class="max-w-4xl">
       <EmblaCarousel />
-    </div> -->
+    </div>
   </section>
   <!-- <Carousel /> -->
   <!-- AppLogo or other global components can go here -->
@@ -67,5 +67,7 @@
 
 <script setup lang="ts">
 import MyHero from '@/components/MyHero.vue'
-// import EmblaCarousel from '@/components/EmblaCarousel.vue'
+import EmblaCarousel from '@/components/EmblaCarousel.vue'
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
 </script>
