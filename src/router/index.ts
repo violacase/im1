@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 // Import all page components
 import HomePage from '@/pages/homePage.vue'
 import AboutPage from '@/pages/aboutPage.vue'
+import InMemoriam from '@/pages/in-memoriam.vue'
 import EmblaDemo from '@/pages/emblaDemo.vue'
 import SetupPage from '@/pages/setupPage.vue'
 import AardigeDemo from '@/pages/aardigeDemo.vue'
@@ -22,6 +23,11 @@ const routes = [
     path: '/aboutPage',
     name: 'AboutPage',
     component: AboutPage,
+  },
+  {
+    path: '/in-memoriam',
+    name: 'InMemoriam',
+    component: InMemoriam,
   },
   {
     path: '/emblaDemo',

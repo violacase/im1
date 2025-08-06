@@ -26,12 +26,12 @@ const navItems: NavItem[] = [
     icon: Info,
     badge: null,
   },
-  // {
-  //   label: "Candles",
-  //   href: "/in-memoriam",
-  //   icon: Flower,
-  //   badge: null,
-  // },
+  {
+    label: "Candles",
+    href: "/in-memoriam",
+    icon: Flower,
+    badge: null,
+  },
   {
     label: "Embla",
     href: "/emblaDemo",
