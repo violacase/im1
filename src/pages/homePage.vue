@@ -1,9 +1,8 @@
 <template>
   <MyHero title="Welkom bij onze zorgverzekering" description="Ontdek de voordelen van onze uitgebreide dekking." />
   <section class="mb-12">
-    <h2 class="text-2xl font-semibold mb-4">Basic Carousel</h2>
     <div class="max-w-4xl">
-      <EmblaCarousel />
+      <!-- <EmblaCarousel /> -->
     </div>
   </section>
   <!-- <Carousel /> -->
@@ -14,6 +13,7 @@
 
       <!-- Full-width background -->
       <div class="content-container w-full max-w-full">
+        <h2 class="text-2xl font-semibold mb-4">Basic Carousel</h2>
 
         <Card class="shadow-xl bg-card text-card-foreground w-full max-w-full">
           <!-- Shadcn Card takes full width of its parent -->

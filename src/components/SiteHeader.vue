@@ -8,7 +8,7 @@
 </template>
 
 <script setup lang="ts">
-import { Home, Settings, Info } from "lucide-vue-next";
+import { Home, Settings, Info, Flower, Projector, Camera } from "lucide-vue-next";
 import DesktopNav from "@/components/DesktopNav.vue";
 import MobileNav from "@/components/MobileNav.vue";
 import type { NavItem } from "@/types/navigation";
@@ -25,6 +25,24 @@ const navItems: NavItem[] = [
     href: "/aboutPage",
     icon: Info,
     badge: null,
+  },
+  // {
+  //   label: "Candles",
+  //   href: "/in-memoriam",
+  //   icon: Flower,
+  //   badge: null,
+  // },
+  {
+    label: "Embla",
+    href: "/emblaDemo",
+    icon: Projector,
+    badge: "New!",
+  },
+  {
+    label: "Embla3",
+    href: "/embla3Page",
+    icon: Camera,
+    badge: "New!",
   },
   {
     label: "Setup",

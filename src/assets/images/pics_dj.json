@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "image": "/images/dj_pics/1.webp",
+    "title": "Exploring the Desert",
+    "description": "A journey through the vast and beautiful sand dunes under the scorching sun."
+  },
+  {
+    "id": 2,
+    "image": "/images/dj_pics/2.webp",
+    "title": "Misty Mountains",
+    "description": "Lost in the clouds, the mountain peaks offer a serene and mystical view."
+  },
+  {
+    "id": 3,
+    "image": "/images/dj_pics/3.webp",
+    "title": "Lush Green Valley",
+    "description": "A vibrant landscape of rolling hills and flowing rivers, teeming with life."
+  },
+  {
+    "id": 4,
+    "image": "/images/dj_pics/4.webp",
+    "title": "Coastal Cliffs",
+    "description": "Dramatic cliffs meeting the powerful ocean waves at sunset."
+  },
+  {
+    "id": 5,
+    "image": "/images/dj_pics/5.webp",
+    "title": "Enchanted Forest",
+    "description": "A magical forest with sunbeams piercing through the dense canopy."
+  },
+  {
+    "id": 6,
+    "image": "/images/dj_pics/6.webp",
+    "title": "Urban Jungle",
+    "description": "A bustling cityscape with towering skyscrapers and vibrant street life."
+  },
+  {
+    "id": 7,
+    "image": "/images/dj_pics/7.webp",
+    "title": "Frozen Tundra",
+    "description": "A stark, icy landscape that captures the harsh beauty of winter."
+  },
+  {
+    "id": 8,
+    "image": "/images/dj_pics/8.webp",
+    "title": "Serene Lake",
+    "description": "A calm lake reflecting the surrounding mountains and sky."
+  },
+  {
+    "id": 9,
+    "image": "/images/dj_pics/9.webp",
+    "title": "Coastal Cliffs",
+    "description": "Dramatic cliffs meeting the powerful ocean waves at sunset."
+  },
+  {
+    "id": 10,
+    "image": "/images/dj_pics/10.webp",
+    "title": "Enchanted Forest",
+    "description": "A magical forest with sunbeams piercing through the dense canopy."
+  },
+  {
+    "id": 11,
+    "image": "/images/dj_pics/11.webp",
+    "title": "Urban Jungle",
+    "description": "A bustling cityscape with towering skyscrapers and vibrant street life."
+  },
+  {
+    "id": 12,
+    "image": "/images/dj_pics/12.webp",
+    "title": "Frozen Tundra",
+    "description": "A stark, icy landscape that captures the harsh beauty of winter."
+  },
+  {
+    "id": 13,
+    "image": "/images/dj_pics/13.webp",
+    "title": "Serene Lake",
+    "description": "A calm lake reflecting the surrounding mountains and sky."
+  }
+]
