@@ -29,4 +29,16 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          // Split large vendor libraries into separate chunks
+          'vue-vendor': ['vue', 'vue-router'],
+          'ui-components': ['reka-ui', 'lucide-vue-next'],
+          supabase: ['@supabase/supabase-js'],
+        },
+      },
+    },
+  },
 })
