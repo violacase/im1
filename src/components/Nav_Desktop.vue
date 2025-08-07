@@ -28,7 +28,14 @@
 import { useRoute } from 'vue-router'
 import ThemeSwitcher from "./ThemeSwitcher.vue";
 import { Badge } from "@/components/ui/badge";
-import type { NavItem } from "@/types/navigation";
+import type { Component } from 'vue';
+
+interface NavItem {
+  label: string
+  href: string
+  icon: Component
+  badge?: string | null
+}
 
 const route = useRoute()
 

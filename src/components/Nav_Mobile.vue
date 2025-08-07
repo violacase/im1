@@ -14,13 +14,19 @@ import {
   X,
 } from "lucide-vue-next"
 import ThemeSwitcher from "@/components/ThemeSwitcher.vue"
-import type { NavItem } from "@/types/navigation"
+import type { Component } from 'vue';
+
+interface NavItem {
+  label: string
+  href: string
+  icon: Component
+  badge?: string | null
+}
 
 // Import the base components from reka-ui to create custom content
 import {
   DialogContent,
   DialogPortal,
-  useForwardPropsEmits,
 } from "reka-ui"
 import { cn } from "@/lib/utils"
 import DialogOverlay from "@/components/ui/dialog/DialogOverlay.vue"
