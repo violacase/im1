@@ -38,9 +38,9 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import RekaModal from '@/components/RekaModal.vue'
-import CandleContent from '@/components/CandleContent.vue'
-import CandleGallery from '@/components/CandleGallery.vue'
-import LightCandleForm from '@/components/LightCandleForm.vue'
+import CandleContent from '@/components/Candle_Content.vue'
+import CandleGallery from '@/components/Candle_Gallery.vue'
+import LightCandleForm from '@/components/Candle_Form.vue'
 
 const newlyAddedId = ref<number | null>(null)
 const isFormModalOpen = ref(false)

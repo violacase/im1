@@ -18,7 +18,7 @@
             <!-- Message container with fixed height and scrolling -->
             <div class="h-24 overflow-y-auto pr-2 text-container">
               <p v-if="candle.message" class="text-muted-foreground italic break-words">"{{ candle.message
-              }}"</p>
+                }}"</p>
             </div>
             <!-- Name is always visible below the message container -->
             <p v-if="candle.name" class="text-primary font-semibold mt-2">- {{ candle.name }}</p>
@@ -36,7 +36,7 @@
 <script setup lang="ts">
 import { onMounted } from 'vue'
 import { useCandles } from '@/composables/useCandles'
-import VirtualCandle from '@/components/VirtualCandle.vue'
+import VirtualCandle from '@/components/Candle_virtual.vue'
 
 defineProps<{
   newlyAddedId?: number | null

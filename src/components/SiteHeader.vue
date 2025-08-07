@@ -8,8 +8,8 @@
 </template>
 
 <script setup lang="ts">
-import DesktopNav from "@/components/DesktopNav.vue";
-import MobileNav from "@/components/MobileNav.vue";
+import DesktopNav from "@/components/Nav_Desktop.vue";
+import MobileNav from "@/components/Nav_Mobile.vue";
 import { getNavItems } from "@/config/routes";
 
 const navItems = getNavItems();
