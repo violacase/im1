@@ -8,47 +8,9 @@
 </template>
 
 <script setup lang="ts">
-import { Home, Settings, Info, Flower, Projector, Camera } from "lucide-vue-next";
 import DesktopNav from "@/components/DesktopNav.vue";
 import MobileNav from "@/components/MobileNav.vue";
-import type { NavItem } from "@/types/navigation";
+import { getNavItems } from "@/config/routes";
 
-const navItems: NavItem[] = [
-  {
-    label: "Home",
-    href: "/homePage",
-    icon: Home,
-    badge: null,
-  },
-  {
-    label: "About",
-    href: "/aboutPage",
-    icon: Info,
-    badge: null,
-  },
-  {
-    label: "Candles",
-    href: "/IMpage",
-    icon: Flower,
-    badge: null,
-  },
-  {
-    label: "Embla",
-    href: "/emblaDemo",
-    icon: Projector,
-    badge: "New!",
-  },
-  {
-    label: "Embla3",
-    href: "/embla3Page",
-    icon: Camera,
-    badge: "New!",
-  },
-  {
-    label: "Setup",
-    href: "/setupPage",
-    icon: Settings,
-    badge: null,
-  },
-];
+const navItems = getNavItems();
 </script>

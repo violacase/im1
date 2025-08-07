@@ -5,21 +5,21 @@
       <p>Your candle is now lit.</p>
     </div>
     <form v-else @submit.prevent="handleSubmit">
-      <div class="mb-4">
+      <div class="mb-6">
         <label for="name" class="block text-muted-foreground text-sm font-bold mb-2">Your Name
           (Optional)</label>
         <input id="name" v-model="name" type="text" placeholder="Leave your name"
-          class="w-full px-3 py-2 text-card-foreground bg-input border border-input rounded focus:outline-none focus:ring-2 focus:ring-ring" />
+          class="w-full px-4 py-3 text-card-foreground bg-input border border-input rounded-lg focus:outline-none focus:ring-2 focus:ring-ring text-base" />
       </div>
       <div class="mb-6">
         <label for="message" class="block text-muted-foreground text-sm font-bold mb-2">Message
           (Optional)</label>
-        <textarea id="message" v-model="message" rows="5" placeholder="Share a memory or a thought"
-          class="w-full px-3 py-2 text-card-foreground bg-input border border-input rounded focus:outline-none focus:ring-2 focus:ring-ring"></textarea>
+        <textarea id="message" v-model="message" rows="6" placeholder="Share a memory or a thought"
+          class="w-full px-4 py-3 text-card-foreground bg-input border border-input rounded-lg focus:outline-none focus:ring-2 focus:ring-ring text-base resize-none"></textarea>
       </div>
-      <div class="flex items-center justify-center">
+      <div class="flex items-center justify-center mt-8">
         <button type="submit" :disabled="loading"
-          class="bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-2 px-6 rounded-full focus:outline-none focus:shadow-outline transition-colors duration-300 disabled:bg-muted disabled:text-muted-foreground disabled:cursor-not-allowed">
+          class="bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-3 px-8 rounded-full focus:outline-none focus:shadow-outline transition-colors duration-300 disabled:bg-muted disabled:text-muted-foreground disabled:cursor-not-allowed text-base">
           {{ loading ? 'Submitting...' : 'Light my candle!' }}
         </button>
       </div>

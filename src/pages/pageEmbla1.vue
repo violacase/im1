@@ -57,7 +57,6 @@
 
 <script setup lang="ts">
 import EmblaCarousel from '@/components/EmblaCarousel.vue'
-import { onMounted } from 'vue'
 import locationsData from '@/assets/images/pics_dj.json'
 
 // Type definition for slide structure
@@ -67,20 +66,6 @@ interface Slide {
   image?: string
   [key: string]: unknown // Allow additional properties
 }
-
-// Page metadata - Vue 3 replacement for Nuxt's useSeoMeta
-onMounted(() => {
-  document.title = 'Embla Carousel Demo'
-
-  const metaDescription = document.querySelector<HTMLMetaElement>('meta[name="description"]')
-    || document.createElement('meta')
-
-  if (!document.querySelector('meta[name="description"]')) {
-    metaDescription.setAttribute('name', 'description')
-    document.head.appendChild(metaDescription)
-  }
-  metaDescription.setAttribute('content', 'Demonstration of Embla Carousel component in Vue 3 with Tailwind CSS')
-})
 
 // Type the slides data
 const slides: Slide[] = locationsData as Slide[]
