@@ -6,11 +6,12 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
+  DialogDescription
 } from "@/components/ui/dialog";
 import { Check, Palette } from "lucide-vue-next";
 import { ref } from "vue";
 import { useTheme } from "@/composables/useTheme";
-import type { ThemeValue } from "@/config/theme";
+import type { ThemeValue } from "@/types/theme";
 
 // Use our custom theme management that properly handles 'system'
 const { currentTheme, setTheme, themes } = useTheme()
@@ -55,7 +56,10 @@ const getThemeClasses = (themeValue: string) => {
       overflow-hidden
     ">
       <DialogHeader class="p-6 pb-4 border-b">
-        <DialogTitle class="text-lg font-semibold">Selecteer thema</DialogTitle>
+        <DialogTitle class="text-lg font-semibold">Select a theme</DialogTitle>
+        <DialogDescription class=" sm:block">
+          Try another theme color scheme if you like
+        </DialogDescription>
       </DialogHeader>
 
       <div class="p-6 pt-4 max-h-[60vh] overflow-y-auto">

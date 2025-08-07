@@ -1,5 +1,5 @@
 import { ref, watch } from 'vue'
-import { THEME_CONFIG, type ThemeValue } from '@/config/theme'
+import { THEME_CONFIG, type ThemeValue } from '@/types/theme'
 
 // Custom theme management that respects 'system' choice properly
 export function useTheme() {

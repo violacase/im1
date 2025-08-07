@@ -28,7 +28,7 @@ const navItems: NavItem[] = [
   },
   {
     label: "Candles",
-    href: "/in-memoriam",
+    href: "/IMpage",
     icon: Flower,
     badge: null,
   },

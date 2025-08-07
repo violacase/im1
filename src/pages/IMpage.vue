@@ -1,8 +1,8 @@
 <template>
   <div class="bg-background text-foreground min-h-screen py-12">
     <div class="container mx-auto px-4">
-      <h1 class="text-4xl lg:text-5xl font-bold text-center mb-4">In Loving Memory</h1>
-      <p class="text-center text-lg text-muted-foreground mb-12">Light a virtual candle and share a thought.</p>
+      <h1 class="text-4xl lg:text-5xl font-bold text-center mb-4">In Loving Memory Jurriaan</h1>
+      <p class="text-center text-lg text-muted-foreground mb-12">Light a virtual candle and share a thought</p>
 
       <!-- CTA buttons container -->
       <div class="text-center mb-16 flex justify-center items-center space-x-4">
@@ -23,21 +23,21 @@
       <CandleGallery :newly-added-id="newlyAddedId" />
 
       <!-- Modal for the "About" content -->
-      <Modal :show="isContentModalOpen" @close="isContentModalOpen = false">
+      <RekaModal :show="isContentModalOpen" @close="isContentModalOpen = false">
         <CandleContent />
-      </Modal>
+      </RekaModal>
 
       <!-- Modal containing the form -->
-      <Modal :show="isFormModalOpen" @close="isFormModalOpen = false">
+      <RekaModal :show="isFormModalOpen" @close="isFormModalOpen = false">
         <LightCandleForm @candle-added="handleCandleAdded" />
-      </Modal>
+      </RekaModal>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import Modal from '@/components/Modal.vue'
+import RekaModal from '@/components/RekaModal.vue'
 import CandleContent from '@/components/CandleContent.vue'
 import CandleGallery from '@/components/CandleGallery.vue'
 import LightCandleForm from '@/components/LightCandleForm.vue'

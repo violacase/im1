@@ -2,7 +2,7 @@
 export const THEME_CONFIG = {
   // Set your preferred default theme here
   // Options: 'system', 'light', 'dark', 'darkblue', 'mediumgreen', 'brown', 'redish', 'darkorange', 'lightorange'
-  defaultTheme: 'dark',
+  defaultTheme: 'brown',
 
   // Available themes
   themes: [
