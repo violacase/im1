@@ -3,7 +3,7 @@ import { ref, computed, onMounted } from 'vue'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Card, CardContent } from '@/components/ui/card'
-import { ArrowRight, Github, Star, Download } from 'lucide-vue-next'
+import { ArrowRight, Github, Star } from 'lucide-vue-next'
 
 // Props interface
 interface Props {

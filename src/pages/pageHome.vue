@@ -1,9 +1,13 @@
 <template>
-  <MyHero title="Welkom bij onze zorgverzekering" description="Ontdek de voordelen van onze uitgebreide dekking." />
+  <!-- <MyHero title="Welkom bij onze zorgverzekering" description="Ontdek de voordelen van onze uitgebreide dekking." /> -->
   <section class="mb-12">
     <div class="max-w-4xl">
       <!-- <EmblaCarousel /> -->
     </div>
+    <div>
+      <h1>{{ $t('welcome') }}</h1>
+    </div>
+
   </section>
   <!-- <Carousel /> -->
   <!-- AppLogo or other global components can go here -->
@@ -66,8 +70,13 @@
 
 
 <script setup lang="ts">
-import MyHero from '@/components/MyHero.vue'
+import { useI18n } from 'vue-i18n'
+// import MyHero from '@/components/MyHero.vue'
 import EmblaCarousel from '@/components/EmblaCarousel.vue'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
+
+
+const { t } = useI18n()
+console.log(t('welcome'))
 </script>
