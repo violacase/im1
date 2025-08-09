@@ -3,48 +3,43 @@
   <div class="bg-background text-foreground min-h-screen">
     <!-- SECTION 1: HERO -->
     <section class="w-full py-16 md:py-24 lg:py-32 bg-muted/20">
-      <!-- Full-width background -->
-      <!-- Custom 'content-container' class styled by media queries -->
       <div class="content-container">
         <div class="text-center">
-          <!-- Tailwind for text alignment -->
           <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-primary">
-            Dé zorgverzekering voor je huisdier
+            {{ t('demo.hero.title') }}
           </h1>
           <p class="text-md sm:text-lg md:text-xl mb-8 max-w-xl mx-auto text-muted-foreground">
-            Best beoordeelde huisdierenverzekeraar op Trustpilot. Standaard de
-            meest complete dekking.
+            {{ t('demo.hero.subtitle') }}
           </p>
-          <Button size="lg" variant="default"> Ontdek jouw premie </Button>
+          <Button size="lg" variant="default">
+            {{ t('demo.hero.cta') }}
+          </Button>
         </div>
       </div>
     </section>
 
     <!-- SECTION 2: PET SELECTION -->
     <section class="w-full py-12 md:py-16 bg-card text-card-foreground">
-      <!-- Full-width background -->
-      <!-- Custom 'content-container' class -->
       <div class="content-container">
         <h2 class="text-2xl sm:text-3xl font-semibold text-center mb-8 sm:mb-12">
-          Welk huisdier heb je?
+          {{ t('demo.petSelection.title') }}
         </h2>
-        <!-- Tailwind for internal grid layout -->
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
           <Button variant="outline" size="lg" class="w-full justify-start py-6 text-base">
-            <span class="mr-3 text-xl">🐶</span> Ik heb een hond
+            <span class="mr-3 text-xl">🐶</span> {{ t('demo.petSelection.buttons.dog') }}
           </Button>
           <Button variant="outline" size="lg" class="w-full justify-start py-6 text-base">
-            <span class="mr-3 text-xl">🐱</span> Ik heb een kat
+            <span class="mr-3 text-xl">🐱</span> {{ t('demo.petSelection.buttons.cat') }}
           </Button>
           <Button variant="outline" size="lg" class="w-full justify-start py-6 text-base">
-            <span class="mr-3 text-xl">🐰</span> Ik heb een konijn
+            <span class="mr-3 text-xl">🐰</span> {{ t('demo.petSelection.buttons.rabbit') }}
           </Button>
           <Button variant="outline" size="lg" class="w-full justify-start py-6 text-base">
-            <span class="mr-3 text-xl">🦜</span> Ik heb een papegaai
+            <span class="mr-3 text-xl">🦜</span> {{ t('demo.petSelection.buttons.parrot') }}
           </Button>
         </div>
         <p class="text-center mt-10 text-sm text-muted-foreground">
-          Nederlands best beoordeelde huisdierenverzekeraar op
+          {{ t('demo.petSelection.trustpilot') }}
           <span class="font-semibold text-primary">⭐ Trustpilot</span>
         </p>
       </div>
@@ -52,46 +47,43 @@
 
     <!-- SECTION 3: "WHAT IS INSURED?" -->
     <section class="w-full py-16 md:py-24 bg-muted/20">
-      <!-- Full-width background -->
-      <!-- Custom 'content-container' class -->
       <div class="content-container">
         <Card class="w-full shadow-xl bg-card text-card-foreground">
-          <!-- Shadcn Card takes full width of its parent -->
           <CardHeader class="pb-4">
             <CardTitle class="text-2xl sm:text-3xl font-semibold text-center">
-              Wat is er verzekerd?
+              {{ t('demo.coverage.title') }}
             </CardTitle>
             <CardDescription class="mt-2 text-center max-w-2xl mx-auto text-muted-foreground">
-              Onze zorgverzekering is met de grootste liefde door onze
-              huisdierspecialisten samengesteld.
+              {{ t('demo.coverage.subtitle') }}
             </CardDescription>
           </CardHeader>
           <CardContent class="p-6 pt-2 space-y-6">
-            <!-- Tailwind for internal grid layout -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div class="bg-accent p-5 rounded-lg text-accent-foreground">
                 <h3 class="font-semibold text-lg mb-2">
-                  Consulten & Onderzoeken
+                  {{ t('demo.coverage.consultations.title') }}
                 </h3>
                 <ul class="space-y-1 text-sm list-disc list-inside pl-1">
-                  <li>Consulten, medicatie & diagnostische onderzoeken</li>
-                  <li>Medische noodzakelijke behandelingen & operaties</li>
-                  <li>Specialistische zorg</li>
+                  <li>{{ t('demo.coverage.consultations.items.0') }}</li>
+                  <li>{{ t('demo.coverage.consultations.items.1') }}</li>
+                  <li>{{ t('demo.coverage.consultations.items.2') }}</li>
                 </ul>
               </div>
               <div class="bg-accent p-5 rounded-lg text-accent-foreground">
                 <h3 class="font-semibold text-lg mb-2">
-                  Wat is er nog meer verzekerd?
+                  {{ t('demo.coverage.additional.title') }}
                 </h3>
                 <ul class="space-y-1 text-sm list-disc list-inside pl-1">
-                  <li>Behandelingen tegen kanker</li>
-                  <li>Gebitsbehandelingen bij ongevallen</li>
-                  <li>Fysiotherapie en hydrotherapie</li>
+                  <li>{{ t('demo.coverage.additional.items.0') }}</li>
+                  <li>{{ t('demo.coverage.additional.items.1') }}</li>
+                  <li>{{ t('demo.coverage.additional.items.2') }}</li>
                 </ul>
               </div>
             </div>
             <div class="text-center pt-4">
-              <Button size="lg" variant="default">Bekijk alle vergoedingen</Button>
+              <Button size="lg" variant="default">
+                {{ t('demo.coverage.cta') }}
+              </Button>
             </div>
           </CardContent>
         </Card>
@@ -100,12 +92,9 @@
 
     <!-- FOOTER SECTION -->
     <footer class="w-full py-10 bg-background border-t border-border">
-      <!-- Full-width background -->
-      <!-- Custom 'content-container' class -->
       <div class="content-container">
         <p class="text-center text-sm text-muted-foreground">
-          © {{ new Date().getFullYear() }} My Awesome Pet Insurance. All rights
-          reserved.
+          © {{ new Date().getFullYear() }} My Awesome Pet Insurance. {{ t('demo.footer.copyright') }}
         </p>
       </div>
     </footer>
@@ -113,10 +102,11 @@
 </template>
 
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-// Shadcn UI components are auto-imported by Nuxt 3.
-// Ensure you've added them: `npx shadcn-nuxt add button card`
+
+const { t } = useI18n()
 </script>
 
 <style scoped>

@@ -20,16 +20,16 @@
 
       <hr class="border-border my-12">
 
-      <CandleGallery :newly-added-id="newlyAddedId" />
+      <Candle_Gallery :newly-added-id="newlyAddedId" />
 
       <!-- Modal for the "About" content -->
       <RekaModal :show="isContentModalOpen" @close="isContentModalOpen = false">
-        <CandleContent />
+        <Candle_Content />
       </RekaModal>
 
       <!-- Modal containing the form -->
       <RekaModal :show="isFormModalOpen" @close="isFormModalOpen = false">
-        <LightCandleForm @candle-added="handleCandleAdded" />
+        <Candle_Form @candle-added="handleCandleAdded" />
       </RekaModal>
     </div>
   </div>
@@ -38,9 +38,9 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import RekaModal from '@/components/RekaModal.vue'
-import CandleContent from '@/components/Candle_Content.vue'
-import CandleGallery from '@/components/Candle_Gallery.vue'
-import LightCandleForm from '@/components/Candle_Form.vue'
+import Candle_Content from '@/components/Candle_Content.vue'
+import Candle_Gallery from '@/components/Candle_Gallery.vue'
+import Candle_Form from '@/components/Candle_Form.vue'
 
 const newlyAddedId = ref<number | null>(null)
 const isFormModalOpen = ref(false)

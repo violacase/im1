@@ -4,5 +4,18 @@
     "switch": "Switch Language",
     "english": "English",
     "dutch": "Dutch"
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact",
+    "services": "Services"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "save": "Save",
+    "cancel": "Cancel",
+    "submit": "Submit"
   }
 }

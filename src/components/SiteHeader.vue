@@ -10,7 +10,7 @@
 <script setup lang="ts">
 import DesktopNav from "@/components/Nav_Desktop.vue";
 import MobileNav from "@/components/Nav_Mobile.vue";
-import { getNavItems } from "@/config/routes";
+import { useTranslatedRoutes } from "@/composables/useTranslatedRoutes";
 
-const navItems = getNavItems();
+const { navItems } = useTranslatedRoutes();
 </script>

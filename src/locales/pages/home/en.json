@@ -1,0 +1,28 @@
+{
+  "home": {
+    "carousel": {
+      "title": "Basic Carousel"
+    },
+    "coverage": {
+      "title": "What is insured?",
+      "subtitle": "Our healthcare insurance is lovingly compiled by our skin specialists.",
+      "consultations": {
+        "title": "Consultations & Examinations",
+        "items": {
+          "0": "Consultations, medication & diagnostic examinations",
+          "1": "Medically necessary treatments & operations",
+          "2": "Specialist care"
+        }
+      },
+      "additional": {
+        "title": "What else is insured?",
+        "items": {
+          "0": "Cancer treatments",
+          "1": "Dental treatments for accidents",
+          "2": "Physiotherapy and hydrotherapy"
+        }
+      },
+      "cta": "View all reimbursements"
+    }
+  }
+}

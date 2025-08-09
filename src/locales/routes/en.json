@@ -1,0 +1,31 @@
+{
+  "routes": {
+    "home": {
+      "label": "Home",
+      "title": "IM-Jurr | Home"
+    },
+    "about": {
+      "label": "About",
+      "title": "IM-Jurr | About"
+    },
+    "candles": {
+      "label": "Candles",
+      "title": "IM-Jurr | In Loving Memory"
+    },
+    "embla1": {
+      "label": "Embla 1",
+      "title": "IM-Jurr | Carousel 1"
+    },
+    "embla2": {
+      "label": "Embla 2",
+      "title": "IM-Jurr | Carousel 2"
+    },
+    "demo": {
+      "label": "Demo",
+      "title": "IM-Jurr | Demo"
+    }
+  },
+  "badges": {
+    "new": "New!"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "home": {
+    "carousel": {
+      "title": "Basis Carrousel"
+    },
+    "coverage": {
+      "title": "Wat is er verzekerd?",
+      "subtitle": "Onze zorgverzekering is met de grootste liefde door onze huidspecialisten samengesteld.",
+      "consultations": {
+        "title": "Consulten & Onderzoeken",
+        "items": {
+          "0": "Consulten, medicatie & diagnostische onderzoeken",
+          "1": "Medische noodzakelijke behandelingen & operaties",
+          "2": "Specialistische zorg"
+        }
+      },
+      "additional": {
+        "title": "Wat is er nog meer verzekerd?",
+        "items": {
+          "0": "Behandelingen tegen kanker",
+          "1": "Gebitbehandelingen bij ongevallen",
+          "2": "Fysiotherapie en hydrotherapie"
+        }
+      },
+      "cta": "Bekijk alle vergoedingen"
+    }
+  }
+}

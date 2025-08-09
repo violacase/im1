@@ -4,5 +4,18 @@
     "switch": "Taal Wijzigen",
     "english": "Engels",
     "dutch": "Nederlands"
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "Over Ons",
+    "contact": "Contact",
+    "services": "Diensten"
+  },
+  "common": {
+    "loading": "Laden...",
+    "error": "Er is een fout opgetreden",
+    "save": "Opslaan",
+    "cancel": "Annuleren",
+    "submit": "Verzenden"
   }
 }

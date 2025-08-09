@@ -1,0 +1,43 @@
+{
+  "demo": {
+    "hero": {
+      "title": "The pet insurance for your pet",
+      "subtitle": "Best rated pet insurer on Trustpilot. Standard the most complete coverage.",
+      "cta": "Discover your premium"
+    },
+    "petSelection": {
+      "title": "Which pet do you have?",
+      "buttons": {
+        "dog": "I have a dog",
+        "cat": "I have a cat",
+        "rabbit": "I have a rabbit",
+        "parrot": "I have a parrot"
+      },
+      "trustpilot": "Netherlands' best rated pet insurer on"
+    },
+    "coverage": {
+      "title": "What is insured?",
+      "subtitle": "Our healthcare insurance is lovingly compiled by our pet specialists.",
+      "consultations": {
+        "title": "Consultations & Examinations",
+        "items": {
+          "0": "Consultations, medication & diagnostic examinations",
+          "1": "Medically necessary treatments & operations",
+          "2": "Specialist care"
+        }
+      },
+      "additional": {
+        "title": "What else is insured?",
+        "items": {
+          "0": "Cancer treatments",
+          "1": "Dental treatments for accidents",
+          "2": "Physiotherapy and hydrotherapy"
+        }
+      },
+      "cta": "View all reimbursements"
+    },
+    "footer": {
+      "copyright": "All rights reserved."
+    }
+  }
+}

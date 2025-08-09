@@ -1,0 +1,43 @@
+{
+  "demo": {
+    "hero": {
+      "title": "Dé zorgverzekering voor je huisdier",
+      "subtitle": "Best beoordeelde huisdierenverzekeraar op Trustpilot. Standaard de meest complete dekking.",
+      "cta": "Ontdek jouw premie"
+    },
+    "petSelection": {
+      "title": "Welk huisdier heb je?",
+      "buttons": {
+        "dog": "Ik heb een hond",
+        "cat": "Ik heb een kat",
+        "rabbit": "Ik heb een konijn",
+        "parrot": "Ik heb een papegaai"
+      },
+      "trustpilot": "Nederlands best beoordeelde huisdierenverzekeraar op"
+    },
+    "coverage": {
+      "title": "Wat is er verzekerd?",
+      "subtitle": "Onze zorgverzekering is met de grootste liefde door onze huisdierspecialisten samengesteld.",
+      "consultations": {
+        "title": "Consulten & Onderzoeken",
+        "items": {
+          "0": "Consulten, medicatie & diagnostische onderzoeken",
+          "1": "Medische noodzakelijke behandelingen & operaties",
+          "2": "Specialistische zorg"
+        }
+      },
+      "additional": {
+        "title": "Wat is er nog meer verzekerd?",
+        "items": {
+          "0": "Behandelingen tegen kanker",
+          "1": "Gebitsbehandelingen bij ongevallen",
+          "2": "Fysiotherapie en hydrotherapie"
+        }
+      },
+      "cta": "Bekijk alle vergoedingen"
+    },
+    "footer": {
+      "copyright": "Alle rechten voorbehouden."
+    }
+  }
+}
